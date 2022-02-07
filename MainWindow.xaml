@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:smallNotes"
         mc:Ignorable="d"
-        Title="smallNotes" Height="450" Width="800">
+        Title="smallNotes" Height="450" Width="450" WindowStartupLocation="CenterOwner">
     <Grid>
 
     </Grid>
