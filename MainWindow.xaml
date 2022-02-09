@@ -6,20 +6,25 @@
         xmlns:local="clr-namespace:smallNotes"
         mc:Ignorable="d"
         Title="smallNotes" Height="450" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <Style x:Key="backButton">
+            <Setter Property="ItemsControl.Background" Value="LightBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid x:Name="grid1">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Border Grid.Row="0" BorderBrush="Black" BorderThickness="2">
-            <ToolBar>
+            <ToolBar Background="White">
                 <Grid x:Name="grid2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="btn1" Grid.Column="0" Width="50">Add</Button>
-                    <Button x:Name="btn2" Grid.Column="1" Width="100" Margin="255 0 0 0">Preferences</Button>
+                    <Button x:Name="btn1" Grid.Column="0" Width="50" Style="{StaticResource backButton}">Add</Button>
+                    <Button x:Name="btn2" Grid.Column="1" Width="100" Margin="255 0 0 0" Style="{StaticResource backButton}" Click="Preferences_Click">Preferences</Button>
                 </Grid>
             </ToolBar>
         </Border>
