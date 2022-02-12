@@ -18,5 +18,30 @@ namespace smallNotes
         {
             InitializeComponent();
         }
+
+        private void LightRB_Checked(object sender, RoutedEventArgs e)
+        {
+            //
+        }
+
+        private void DarkRB_Checked(object sender, RoutedEventArgs e)
+        {
+            //
+        }
+
+        private void RB1_Checked(object sender, RoutedEventArgs e)
+        {
+            //
+        }
+
+        private void RB2_Checked(object sender, RoutedEventArgs e)
+        {
+            //
+        }
+
+        private void RB3_Checked(object sender, RoutedEventArgs e)
+        {
+            //
+        }
     }
 }

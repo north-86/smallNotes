@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:smallNotes"
         mc:Ignorable="d"
-        Title="Preferences" Height="450" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Preferences" Height="320" Width="250" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="ItemsControl.FontSize" Value="14"/>
+            <Setter Property="ItemsControl.Margin" Value="5 5 0 0"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="GroupBox">
+            <Setter Property="ItemsControl.FontSize" Value="15"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <GroupBox x:Name="groupBox1" Grid.Row="0" Header="Color Theme">
+            <StackPanel>
+                <RadioButton Content="Light" Checked="LightRB_Checked"/>
+                <RadioButton Content="Dark" Checked="DarkRB_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="groupBox2" Grid.Row="1" Header="Text Sizes">
+            <StackPanel>
+                <RadioButton Content="10" Checked="RB1_Checked"/>
+                <RadioButton Content="13" Checked="RB2_Checked"/>
+                <RadioButton Content="15" Checked="RB3_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <Border Grid.Row="2">
+            <Expander Header="About" FontSize="15">
+                <Border BorderBrush="Black" BorderThickness="0.5">
+                    <StackPanel>
+                        <TextBlock Text="smallNotes" FontSize="15" Margin="0 0 0 5"/>
+                        <TextBlock Text="This application allows you to create notes" FontSize="10"/>
+                        <TextBlock Text="GNU General Public License v3.0" FontSize="10" Margin="0 10 0 0"/>
+                    </StackPanel>
+                </Border>
+            </Expander>
+        </Border>
     </Grid>
 </Window>
