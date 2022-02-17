@@ -21,27 +21,14 @@ namespace smallNotes
 
         private void LightRB_Checked(object sender, RoutedEventArgs e)
         {
-            //
+            this.Owner.Background = new SolidColorBrush(Colors.White);
+            this.Background = new SolidColorBrush(Colors.White);
         }
 
         private void DarkRB_Checked(object sender, RoutedEventArgs e)
         {
-            //
-        }
-
-        private void RB1_Checked(object sender, RoutedEventArgs e)
-        {
-            //
-        }
-
-        private void RB2_Checked(object sender, RoutedEventArgs e)
-        {
-            //
-        }
-
-        private void RB3_Checked(object sender, RoutedEventArgs e)
-        {
-            //
+            this.Owner.Background = new SolidColorBrush(Colors.Gray);
+            this.Background = new SolidColorBrush(Colors.Gray);
         }
     }
 }

@@ -17,16 +17,19 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Border Grid.Row="0" BorderBrush="Black" BorderThickness="2">
-            <ToolBar Background="White">
+            <ToolBar x:Name="toolBar" Background="White">
                 <Grid x:Name="grid2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="btn1" Grid.Column="0" Width="50" Style="{StaticResource backButton}">Add</Button>
+                    <Button x:Name="btn1" Grid.Column="0" Width="50" Style="{StaticResource backButton}" Click="AddNotes_Click">Add</Button>
                     <Button x:Name="btn2" Grid.Column="1" Width="100" Margin="255 0 0 0" Style="{StaticResource backButton}" Click="Preferences_Click">Preferences</Button>
                 </Grid>
             </ToolBar>
         </Border>
+        <ScrollViewer x:Name="scrollViewer" Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
+            <StackPanel x:Name="stackPanel" Orientation="Vertical"></StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
