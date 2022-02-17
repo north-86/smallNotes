@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:smallNotes"
         mc:Ignorable="d"
-        Title="Preferences" Height="320" Width="250" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Preferences" Height="220" Width="250" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Resources>
         <Style TargetType="RadioButton">
             <Setter Property="ItemsControl.FontSize" Value="14"/>
@@ -21,7 +21,6 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
-            <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <GroupBox x:Name="groupBox1" Grid.Row="0" Header="Color Theme">
@@ -30,14 +29,7 @@
                 <RadioButton Content="Dark" Checked="DarkRB_Checked"/>
             </StackPanel>
         </GroupBox>
-        <GroupBox x:Name="groupBox2" Grid.Row="1" Header="Text Sizes">
-            <StackPanel>
-                <RadioButton Content="10" Checked="RB1_Checked"/>
-                <RadioButton Content="13" Checked="RB2_Checked"/>
-                <RadioButton Content="15" Checked="RB3_Checked"/>
-            </StackPanel>
-        </GroupBox>
-        <Border Grid.Row="2">
+        <Border Grid.Row="1">
             <Expander Header="About" FontSize="15">
                 <Border BorderBrush="Black" BorderThickness="0.5">
                     <StackPanel>
