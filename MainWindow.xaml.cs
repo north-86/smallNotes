@@ -25,7 +25,7 @@ namespace smallNotes
         private void AddNotes_Click(object sender, RoutedEventArgs e)
         {
             StackPanel stack = new StackPanel() { Orientation = Orientation.Horizontal, Margin = new Thickness(5, 5, 0, 0) };
-            CheckBox checkBox = new CheckBox() { Height = 20, Width = 20, IsChecked = false };
+            CheckBox checkBox = new CheckBox() { Height = 20, Width = 20, IsChecked = false, BorderBrush = new SolidColorBrush(Colors.Black) };
             TextBox textBox = new TextBox() { Width = 380, MinHeight = 20, TextWrapping = TextWrapping.Wrap, VerticalContentAlignment = VerticalAlignment.Center, FontSize = 13, FontFamily = new FontFamily("Courier New") };
             Expander expander = new Expander();
             
