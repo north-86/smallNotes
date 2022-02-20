@@ -10,6 +10,11 @@
         <Style x:Key="backButton">
             <Setter Property="ItemsControl.Background" Value="LightBlue"/>
         </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="ItemsControl.BorderBrush" Value="Black"/>
+            <Setter Property="AcceptsReturn" Value="True"/>
+            <Setter Property="SpellCheck.IsEnabled" Value="True"/>
+        </Style>
     </Window.Resources>
     <Grid x:Name="grid1">
         <Grid.RowDefinitions>
